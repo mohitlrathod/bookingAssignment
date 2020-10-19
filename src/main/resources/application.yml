@@ -1,0 +1,16 @@
+spring:
+  data:
+    cassandra:
+      keyspaceName: mykeyspace
+      port: 9042
+      local-datacenter: datacenter1
+      username: cassandra
+      password: cassandra
+      contact-points:
+      -  localhost
+      
+logging:
+  level:
+    root: debug   
+booking:
+  url: https://maersk.com/api/bookings/checkAvailable

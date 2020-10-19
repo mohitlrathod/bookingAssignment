@@ -1,0 +1,12 @@
+spring:
+  data:
+    cassandra:
+      keyspaceName: mohitkeyspace
+      port: 9042
+      schemaAction: CREATE_IF_NOT_EXISTS
+      local-datacenter: DC1
+logging:
+  level:
+    root: info   
+booking:
+  url: https://maersk.com/api/bookings/checkAvailable
